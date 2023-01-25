@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hola {{name}}</h1>
+    <h3>Categorias</h3>
+    <ul>
+      {% comment %}
+      Soy un comentario
+      multilinea. La siguiente linea pone en negrita la palabra code
+      {% endcomment %}
+      {%for categoria in categories%} 
+        {%if categoria == 'code'%}
+             <li><b> {{categoria|upper}}</b></li>
+        {%else%}
+            <li>{{categoria}}</li>
+         {%endif%} 
+      {%endfor%}
+      <h5>Total de categorias: {{categories|length}} </h5>
+    </ul>
+  </body>
+</html>

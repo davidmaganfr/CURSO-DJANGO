@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>OBTENER  5 DATOS INDEXANDO LA BASE DE DATOS</h3>
+    <ul>{%for valor in offsets%}
+        <li>{{valor.email}}</li>
+        {%endfor%}
+    </ul> 
+    <h3>OBTENIENDO LOS 10 PRIMEROS</h3>
+    <ul>{%for var in limit%}
+        <li>{{var.email}}</li>
+        {%endfor%}
+    </ul>
+    <h3>Obteniendo un unico elemento (filtrado por id)</h3>
+    <p>{{autor.email}}</p>
+
+    <h3>Buscando autor donde email = anne74@example.org</h3>
+    <ul>
+        {%for i in autores_filtrados%}
+        <li> {{i.name}} | {{i.email}}</li>
+        {%endfor%}
+    </ul>
+    <ul>
+        {%for autor in autores%}
+        <li>{{autor.name}} ({{autor.email}})</li>
+        {%endfor%}
+    </ul>
+    <h3>Total de autores: {{autores|length}}</h3>
+</body>
+</html>

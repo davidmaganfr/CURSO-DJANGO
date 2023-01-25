@@ -1,0 +1,106 @@
+:root {
+    --color-primary: hwb(0 96% 4% / 0.925) ;
+    --color-secundary: #c8cbb1;
+    --color-text:rgb(73, 63, 63) ;
+    --color-bg: rgb(229, 212, 212);
+    --font-title: Sparkle;
+}
+
+ul {
+    list-style-type:none;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+    color: var(--color-text);
+}
+
+nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(138, 90, 86);
+    align-items: center;
+    height: 100px;
+
+}
+
+nav img {
+    margin: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 100px;
+    justify-content: center;
+}
+
+nav ul li a{
+    text-decoration:none;
+    font-size: 20px;
+    color: whitesmoke;
+    justify-content: center;
+    font-family: var(--font-title);
+}
+
+main {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    min-height: 75vh;
+}
+
+footer{
+    background-color: rgb(228, 73, 93);
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    padding: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li a {
+    color:rgb(13, 16, 15);
+    text-decoration: none;
+}
+
+footer img {
+    margin: 25px;
+}
+
+.about { 
+    display: flex;
+    padding: 25px;
+}
+
+.about-content {
+    width: 350px;
+    padding: 50px;
+}
+.photos {
+    display: flex;
+    justify-self: center;
+}
+
+@font-face {
+    font-family: Sparkle;
+    src: url('../Fuentes/Sparkle.ttf');
+} 
