@@ -7,6 +7,24 @@
     <title>Document</title>
 </head>
 <body>
+    <h3>ELEMENTOS QUE INCLUYAN 'yes' EN SU NOMBRE</h3>
+    <ul>{%for s in palabra_clave%}
+        <li>{{s.name}}</li>
+        {%endfor%}
+    </ul> 
+
+    <h3>ELEMENTOS CUYO ID ES MENOS O IGUAL 15</h3>
+    <ul>{%for s in filtrados%}
+        <li>{{s.email}}</li>
+        {%endfor%}
+    </ul> 
+
+    <h3>ELEMENTOS ORDENADOR POR EMAIL</h3>
+    <ul>{%for n in orden%}
+        <li>{{n.email}}</li>
+        {%endfor%}
+    </ul> 
+
     <h3>OBTENER  5 DATOS INDEXANDO LA BASE DE DATOS</h3>
     <ul>{%for valor in offsets%}
         <li>{{valor.email}}</li>
