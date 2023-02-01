@@ -1,0 +1,7 @@
+{#Este archivo contiene el formulario en si mismo, que apunta a la view 'postgoal'#}
+<form action='{% url 'postgoal' %}' method='POST'>
+    {% csrf_token %} {#OBLIGATORIO cuando se utiliza el metodo POST como mecanismo de seguridad#}
+    <input type='text' name='info' placeholder='Escribe algo...'>
+    <input type='submit' value='Enviar'>
+</form>
+{#Este archivo una vez que cumplimento el cuestionario y envio, me reenvia a la view postgoal#}
