@@ -13,6 +13,6 @@ class ContactForm(forms.Form):
     def clean_name(self): #AÑADE VALIDACIONES EXTRA AL NOMBRE
         name= self.cleaned_data.get('name')
         if name != 'Open':
-            raise forms.ValidationError('Tan solo el valor Open esta permitido')
+            raise forms.ValidationError('Tan solo el valor "Open" esta permitido')
         else:
             return name
